@@ -54,7 +54,6 @@
           showVertices: true,
           showPolygons: true
         };
-        console.log(ctrl);
       }
 
       // Function getData
