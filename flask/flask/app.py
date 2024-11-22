@@ -23,5 +23,6 @@ def universe():
 def superpowerAbilities():
     return render_template("superpowerAbilities.html")
 
+
 if __name__ == '__main__':
     app.run()
