@@ -38,7 +38,6 @@
         ctrl.exampleSelected = ctrl.examples[0];
         ctrl.getData = getData;
         ctrl.selectExample = selectExample;
-  
         // Initialize controller functions
         ctrl.selectExample(ctrl.exampleSelected);
         ctrl.config = {
@@ -55,16 +54,18 @@
           showVertices: true,
           showPolygons: true
         };
+        console.log(ctrl);
       }
 
       // Function getData
-      function getData($fileContent) {
+      function getData($fileContent)
+      {
         ctrl.csv = $fileContent;
       }
   
       // Function selectExample
       function selectExample(item) {
-        var file = item + ".csv";
+        var file = "static/Csv/"+ item + ".csv";
         $http.get(file).success(function(data) {
           ctrl.csv = data;
         });
