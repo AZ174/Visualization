@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
+
 
 
 @app.route('/')
@@ -22,6 +23,11 @@ def universe():
 @app.route('/superpowerAbilities')
 def superpowerAbilities():
     return render_template("superpowerAbilities.html")
+
+@app.route('/X_Men_network')
+def X_MEN():
+    return render_template("X_Men.html")
+
 
 if __name__ == '__main__':
     app.run()

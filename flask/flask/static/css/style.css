@@ -37,6 +37,11 @@
         top: 260px;
         background-color: #b9b9b9;
     }
+#X_Men_network {
+        top: 320px;
+        background-color: #b9b9b9;
+    }
+
 @font-face {
     font-family: myFont;
     src: url(./Marvel_font.ttf);
