@@ -11,6 +11,11 @@
 <script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
 
 <style type="text/css">
+    html, body {
+    height: 100%;
+    margin: 0; /* 去掉默认的 margin */
+    overflow: hidden; /* 去掉滑动条 */
+}
 #mySidenav a {
     position: absolute; 
     left: -320px; 
@@ -79,8 +84,9 @@
             height: 100%;
             background-color: #000000;
             border: 1px solid lightgray;
-            position: relative;
-            float: left;
+            position: absolute; /* 使用绝对定位填满父容器 */
+            top: 0; /* 顶部对齐 */
+            left: 0; /* 左侧对齐 */
         }
 
         

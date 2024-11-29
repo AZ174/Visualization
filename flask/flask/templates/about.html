@@ -50,31 +50,17 @@
         </header>
       <img class="pic3" src="static/image/Marvel_profiles.jpg" alt="" >
       </div>
+      <div class="col-xs-12 text-start"> 
+        <p class="text">‌    ‌    ‌    ‌    自1939年由马丁·古德曼创立以来，漫威漫画发展成为一个巨大的电影娱乐实体，将其最著名的角色搬上银幕，而这些角色的故事在数十年前曾以漫画书的形式谦逊地创作出来。漫威时代正式始于1961年，当时公司推出了由斯坦·李等人创作的《神奇四侠》和超级英雄系列。斯坦·李创造了漫威最知名的超级英雄，如美国队长、蜘蛛侠、钢铁侠、金刚狼、绿巨人、雷神、蚁人（巨人）、黄蜂女、奇异博士、绯红女巫、隐形女和石头人。大多数漫威的虚构角色活动于一个称为漫威宇宙的单一现实中，尽管这个宇宙后来被描绘为由数千个独立宇宙组成的“多元宇宙”。</p><hr> 
+      </div>
       <div class="col-xs-12 text-center"> 
-        <p class="text">Since its creation in 1939 by Martin Goodman, Marvel Comics has grown into a huge blockbuster entity that creates cinematic renditions of its most famous 
-          characters whose stories were humbly created in comic books several decades before. The Marvel era officially begain in 1961, when the company launched the The Fantastic 
-          Four and superhero titles created by Stan Lee amongst others. Stan Lee is responsible for creating Marvel's most well-known superheroes such as Captain America, Spider-Man, 
-          Iron Man, Wolverine, the Hulk, Thor, Ant-Man (Giant), the Wasp, Doctor Strange, Scarlet Witch, Invisible Woman, and Thing. Most of Marvel's fictional characters operate in a
-          single reality known as the Marvel Universe, though this universe has been further depicted as being comprised of a "multiverse" of thousands of separate universes.</p><hr> 
-          
-        <p class="text">This data visualization project delves into the universe, initially looking at its general history, its complex entirity, and then specifics on the 20 
-          most-networked and well-known superheros, as well as what makes them superheroes in the first place. Datasets on character history and demographics were initially 
-          obtained from Kaggle and Marvel's official wiki. Databases were then created from the initial CSV files, which employed Python via Jupyter Notebook, Microsoft Excel, and SQL. 
-          D3.js was used extensively to create the interactive visualizations seen here via HTML, CSS, and Javascript.</p><hr>
+        <p class="text">此项目探讨了漫威宇宙，首先回顾其整体历史及复杂的整体性，然后具体分析最具网络影响力和知名度的20位超级英雄，以及他们为何成为超级英雄的原因。<br></br>角色历史和人口统计数据最初来源于Kaggle和漫威的官方维基。</p><hr>
         
-        <p class="text">The different tabs sequentially navigate you from one interactive visualization to the next. User prompts are highlighted in red above each visualization.</p><hr>
-
-        <p class="text"><b>Data sets Used:</b><br>
-        https://www.kaggle.com/dannielr/marvel-superheroes?select=charcters_stats.csv<br>
-        https://www.kaggle.com/fivethirtyeight/fivethirtyeight-comic-characters-dataset?select=marvel-wikia-data.csv<br>
-        https://marvel.fandom.com/wiki/Power_Grid<br>
-        <b>Marvel Images:</b><br>
-        https://img.wallpapersafari.com/desktop/1920/1080/44/13/g1NGvx.jpg<br>
-        https://wallpaperset.com/w/full/d/6/8/526989.jpg</p><br><br>
+        <p class="text">不同的标签页按顺序引导您从一个交互式可视化跳转到下一个。用户提示以红色高亮显示在每个可视化的上方。</p><hr>
+          
 
       <div id="center">
-      <h3>12,940 characters were statistically evaluated based on their alignments (good, bad, neutral) versus their gender and identity (public, secret, no dual - no alias/alter ego).
-        The donut charts below illustrate the proportions of this categorical data in the Marvel Universe.</h3></div>
+      <h3>12,940个角色根据其阵营（善良、邪恶、中立）与身份（公开、秘密、无双重身份——无别名/替身）进行统计评估。<br></br>下方的环形图展示了漫威宇宙中这些分类数据的比例。</h3></div>
       <div class="col-xs-6 text-center">
         <!-- Load d3.js & color scale -->
         <script src="https://d3js.org/d3.v5.js"></script>
@@ -91,14 +77,10 @@
       <br>
       <br>
     </div>
-    <div class id="col-xs-12">
       <div id="center">
-        <h3>Marvel Comic's rich 82-year timespan has prolifically produced over 7,000 characters--maybe more than 50,000 counting one-off and ancillary superheroes, villains, and other mutants. 
-        The bar graph below shows the number of characters produced each year until 2013. While the late 50's only produced a few new characters, the early 90's produced the most. 554 
-        characters were born in 1993 alone, the highest of any single year.</h3></div>
+        <h3>漫威漫画辉煌的82年历史中已推出超过7,000个角色——如果算上一次性和次要的超级英雄、反派和其他变种人，可能超过50,000个。下方的条形图显示了直到2013年的每年角色创作数量。尽管50年代后期仅创作了少数新角色，90年代初期创作了最多的角色。单单1993年就诞生了554个角色，这是单一年份中最多的。</h3></div>
         <div id="tooltip"></div>
       </div>
-    </div>
   </div>
 
 

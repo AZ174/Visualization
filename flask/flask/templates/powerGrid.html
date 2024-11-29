@@ -33,101 +33,103 @@
   <div id="center"> 
     <!-- header -->
     <header class="page-header">
-      <h1>Top 20 Power Grid Comparison</h1> 
-      <h2>How Do the Proficiencies of the 20 Most Networked Superheroes Stack Up Against Each Other?</h2>
-    </header>
-  </div>
-  <div id="left">
-      <p2 class="text-small"><b>The Power Grid is an official ranking system used by Marvel to quantify characters in 7 key areas of prowess. In all 7 areas, 1 represents the lowest and 7 the highest rank achievable.</b>
-      <br>
-      <br><b>Intelligence</b> - The ability to think and process information: 1. Slow/Impaired, 2. Normal, 3. Learned, 4. Gifted, 5. Genius, 6. Super-Genius, 7. Omniscient
-      <br> 
-      <br><b>Strength</b> - The ability to lift (press) weight over one's head:
-        1. Weak: Cannot lift own body weight,
-        2. Normal: Able to lift between over own body weight and twice own body weight,
-        3. Peak Human: Able to lift over twice own body weight or up to 800 lbs,
-        4. Superhuman: Able to lift between 800 lbs. and 25 tons,
-        5. Superhuman: Able to lift between 25-75 tons,
-        6. Superhuman: Able to lift between 75-100 tons,
-        7. Incalculable: In excess of 100 tons
-        <br>
-        <br><b>Speed</b> - The ability to move over land by running or flight:
-        1. Below Normal,
-        2. Normal,
-        3. Subsonic Superhuman: Able to move at a peak velocity below Mach-1 (approximately 760 miles per hour),
-        4. Speed of Sound: Able to move at a peak veolicty between Mach-1 to Mach-2 (approximately 1,520 mph),
-        5. Supersonic: Able to move at a peak veolicty between Mach-2 to orbital velocity (approximately 17,000 mph),
-        6. Speed of Light: Able to move at a peak velocity up to 186,000 miles per second,
-        7. Warp Speed: Able to transcend light speed or teleport (instantaneous travel)
-        <br>
-        <br><b>Durability</b> - The ability to resist or recover from bodily injury:
-        1. Weak,
-        2. Normal,
-        3. Enhanced,
-        4. Regenerative,
-        5. Bulletproof,
-        6. Superhuman,
-        7. Virtually Indestructible
-        <br>
-        <br><b>Energy Projection</b> - The ability to discharge energy:
-        1. None,
-        2. Ability to discharge energy on contact,
-        3. Short range, short duration, single energy type,
-        4. Medium range, duration, single energy type,
-        5. Long range, long duration, single energy type,
-        6. Able to discharge multiple forms of energy,
-        7. Virtually unlimited command of all forms of energy
-        <br>
-        <br><b>Fight Ability</b> - The proficiency in hand-to-hand combat:
-        1. Poor,
-        2. Normal,
-        3. Some training,
-        4. Experienced fighter,
-        5. Master of a single form of combat,
-        6. Master of several forms of combat,
-        7. Master of all forms of combat
-    </p2>
-  </div>
-  <hr />
-  <div id="center">
-    <h3>Select a Top 20 Superhero & adjust the chart according to specific configuration parameters. 
-      Mouseover any of the nodes to see their rank score.</h3>
-    <p3>Select Superhero:
-    <select ng-options="example for example in radar.examples" ng-model="radar.exampleSelected" ng-change="radar.selectExample(radar.exampleSelected)"></select>
-    </p3>
-  </div>
+      <h1>Top 20能力对比</h1> 
+      <h2>网络中最具影响力的20位超级英雄的能力如何相互比较？</h2>
+      </header>
+      </div>
+      <div id="left">
+          <p2 class="text-small">
+              <b>力量网格是漫威官方用来量化角色在七大关键能力领域的排名系统。在所有七个领域中，1表示最低等级，7表示最高等级。</b>
+              <br>
+              <br><b>智力Intelligence</b> - 思考和处理信息的能力：
+              1. 缓慢/受损，2. 普通，3. 博学，4. 天才，5. 超级天才，6. 全知
+              <br> 
+              <br><b>力量Strength</b> - 高举重量（压举）的能力：
+              1. 弱小：无法举起自身重量，
+              2. 普通：能举起自身重量到两倍自身重量之间，
+              3. 人类极限：能举起两倍以上自身重量或最多800磅，
+              4. 超人：能举起800磅到25吨，
+              5. 超人：能举起25-75吨，
+              6. 超人：能举起75-100吨，
+              7. 不可估量：超过100吨
+              <br>
+              <br><b>速度Speed</b> - 通过奔跑或飞行在陆地上移动的能力：
+              1. 低于普通，
+              2. 普通，
+              3. 亚音速超人：最高速度低于音速（约760英里/小时），
+              4. 音速：最高速度在音速至两倍音速之间（约1,520英里/小时），
+              5. 超音速：最高速度在两倍音速到轨道速度之间（约17,000英里/小时），
+              6. 光速：最高速度可达每秒186,000英里，
+              7. 曲速：能超越光速或瞬间移动
+              <br>
+              <br><b>耐久度Durability</b> - 抵抗或从身体伤害中恢复的能力：
+              1. 弱小，
+              2. 普通，
+              3. 增强，
+              4. 再生，
+              5. 防弹，
+              6. 超人，
+              7. 几乎不可摧毁
+              <br>
+              <br><b>能量投射Energy Projection</b> - 释放能量的能力：
+              1. 无，
+              2. 能在接触时释放能量，
+              3. 短距离、短时间、单一能量类型，
+              4. 中距离、中时间、单一能量类型，
+              5. 长距离、长时间、单一能量类型，
+              6. 能释放多种形式的能量，
+              7. 几乎无限地控制所有形式的能量
+              <br>
+              <br><b>战斗能力Fighting Skills</b> - 徒手作战的熟练度：
+              1. 差，
+              2. 普通，
+              3. 受过一些训练，
+              4. 有经验的战士，
+              5. 精通单一战斗形式，
+              6. 精通多种战斗形式，
+              7. 精通所有战斗形式
+          </p2>
+      </div>
+      <hr />
+      <div id="center">
+        <h3>选择一个Top 20超级英雄并根据具体配置参数调整图表。
+            将鼠标悬停在任意节点上可查看其排名分数。</h3>
+        <p3>选择：
+        <select ng-options="example for example in radar.examples" ng-model="radar.exampleSelected" ng-change="radar.selectExample(radar.exampleSelected)"></select>
+        </p3>
+      </div>
 
-  <!-- main content -->
-  <div class="main container">
-    <!-- configuration -->
-    <div class="configuration col-xs-3">
-      <form>
-        <h4>Configuration Parameters</h4>
-        <div class="form-group">
-          <label>Width:</label>
-          <input type="number" class="form-control-inline" step="50" ng-model="radar.config.w" />
-        </div>
-        <div class="form-group">
-          <label>Height:</label>
-          <input type="number" class="form-control-inline" step="50" ng-model="radar.config.h" />
-        </div>
-        <div class="form-group">
-          <label>Levels:</label>
-          <input type="number" class="form-control-inline" step="1" ng-model="radar.config.levels" />
-        </div>
-        <div class="form-group">
-          <label>Label Scale:</label>
-          <input type="number" class="form-control-inline" step="0.1" ng-model="radar.config.labelScale" />
-        </div>
-        <div class="form-group">
-          <label class="checkbox"><input type="checkbox" ng-model="radar.config.showLevels" />Levels</label>
-          <label class="checkbox"><input type="checkbox" ng-model="radar.config.showAxes" />Axes</label>
-          <label class="checkbox"><input type="checkbox" ng-model="radar.config.showVertices" />Vertices</label>
-          <label class="checkbox"><input type="checkbox" ng-model="radar.config.showPolygons" />Polygons</label>
-          <label class="checkbox"><input type="checkbox" ng-model="radar.config.showLegend" />Legend</label>
-          <label class="checkbox"><input type="checkbox" ng-model="radar.config.showLevelsLabels" />Levels Labels</label>
-          <label class="checkbox"><input type="checkbox" ng-model="radar.config.showAxesLabels" />Axes Labels</label>
-        </div>
+<!-- 主内容 -->
+<div class="main container">
+  <!-- 配置 -->
+  <div class="configuration col-xs-3">
+    <form>
+      <h4>配置参数</h4>
+      <div class="form-group">
+        <label>宽度：</label>
+        <input type="number" class="form-control-inline" step="50" ng-model="radar.config.w" />
+      </div>
+      <div class="form-group">
+        <label>高度：</label>
+        <input type="number" class="form-control-inline" step="50" ng-model="radar.config.h" />
+      </div>
+      <div class="form-group">
+        <label>等级数：</label>
+        <input type="number" class="form-control-inline" step="1" ng-model="radar.config.levels" />
+      </div>
+      <div class="form-group">
+        <label>标签缩放：</label>
+        <input type="number" class="form-control-inline" step="0.1" ng-model="radar.config.labelScale" />
+      </div>
+      <div class="form-group">
+        <label class="checkbox"><input type="checkbox" ng-model="radar.config.showLevels" />等级</label>
+        <label class="checkbox"><input type="checkbox" ng-model="radar.config.showAxes" />轴线</label>
+        <label class="checkbox"><input type="checkbox" ng-model="radar.config.showVertices" />顶点</label>
+        <label class="checkbox"><input type="checkbox" ng-model="radar.config.showPolygons" />多边形</label>
+        <label class="checkbox"><input type="checkbox" ng-model="radar.config.showLegend" />图例</label>
+        <label class="checkbox"><input type="checkbox" ng-model="radar.config.showLevelsLabels" />等级标签</label>
+        <label class="checkbox"><input type="checkbox" ng-model="radar.config.showAxesLabels" />轴标签</label>
+      </div>
     </div>
     <!-- visualization -->
     <div class="container col-xs-9">
