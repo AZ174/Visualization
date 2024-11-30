@@ -27,18 +27,22 @@
     }
 #universe {
         top: 140px;
-        background-color: #6b6a6a; 
+        background-color: #464646; 
     }
 #powerGrid {
         top: 200px;
-        background-color: #919291; 
+        background-color: #575757; 
     }
 #superpowerAbilities {
         top: 260px;
-        background-color: #b9b9b9;
+        background-color: #686868;
     }
 #X_Men_network {
         top: 320px;
+        background-color: #797979;
+    }
+#characters {
+        top: 380px;
         background-color: #b9b9b9;
     }
 

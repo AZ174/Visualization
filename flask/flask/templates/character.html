@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marvel Characters</title>
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/toolbar.css">
+  <link rel="stylesheet" href="static/css/featured-character.css">
+  <link rel="stylesheet" href="static/css/carousel.css">
+  <style type="text/css">
+#mySidenav a {
+    position: absolute; 
+    left: -320px; 
+    transition: 0.3s; 
+    padding: 15px;
+    padding-right: 30px;
+    width: 300px; 
+    text-decoration: none; 
+    text-align: right;
+    font-size: 32px; 
+    fill-opacity: 100%;
+    z-index: 1;
+    color: white; 
+    font-family: myFont !important;
+    }
+#mySidenav a:hover {
+        left: 0; 
+    }  
+    .sidenav {
+  position: fixed; /* 将侧边栏固定 */
+  top: 0; /* 设置距离顶部为0 */
+  left: 0; /* 设置距离左边为0 */
+  width: 100%; /* 设置宽度为100% */
+  z-index: 1000; /* 设置较高的层级，使其在其他元素之上 */
+}
+#home {
+        top: 20px;
+        fill-opacity: 1.0;
+        background-color: rgb(27, 27, 27);
+    }  
+#about {
+        top: 80px;
+        background-color: #353535; 
+    }
+#universe {
+        top: 140px;
+        background-color: #464646; 
+    }
+#powerGrid {
+        top: 200px;
+        background-color: #575757; 
+    }
+#superpowerAbilities {
+        top: 260px;
+        background-color: #686868;
+    }
+#X_Men_network {
+        top: 320px;
+        background-color: #797979;
+    }
+#characters {
+        top: 380px;
+        background-color: #b9b9b9;
+    }
+    @font-face {
+    font-family: myFont;
+    src: url(static/css/Marvel_font.ttf);
+    }
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    width: 90%;
+    }
+.pic3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 50%;
+    }
+    h6 {
+    color: rgb(41, 41, 41);
+    font-weight: 600;
+    font-size: 2.5em;
+  }
+  .centered-title {
+    text-align: center;
+}
+</style>
+<div id="mySidenav" class="sidenav">
+  <a href="/" id="home">HOME</a>
+  <a href="/about" id="about">ABOUT</a>
+  <a href="/universe" id="universe">MARVEL NETWORK</a>
+  <a href="/powerGrid" id="powerGrid">SUPERHERO POWER GRID</a>
+  <a href="/superpowerAbilities" id="superpowerAbilities">SUPERPOWER ABILITIES</a>
+  <a href="/X_Men_network" id="X_Men_network">X_MEN NETWORK</a>
+  <a href="/characters" id="characters">CHARACTERS</a>
+</div>
+</head>
+
+<body>
+  <header class="toolbar">
+    <img src="static/image/marvel-logo.png" alt="Marvel logo" class="marvel-logo">
+    <div class="search">
+      <i class="material-icons icon-search">search</i>
+      <input type="text" placeholder="Search for character" class="search-input">
+    </div>
+    <ul class="search-dropdown">
+    </ul>
+  </header>
+
+  <main>
+    <h6 class="centered-title">关于超级英雄</h6>
+    <hr>
+    <p class="error-message">加载错误喵~请重试喵~关注塔菲喵~</p>
+    <div class="container">
+      <div class="featured-character">
+        <div class="featured-character-img">
+          <img alt="Featured Character" class="large-img">
+          <div class="featured-character-details">
+            <h1 class="character-name"></h1>
+            <ul class="character-links">
+            </ul>
+          </div>
+        </div>
+        <div class="character-details">
+          <h2>简介</h2>
+          <p class="character-description"></p>
+          <h2>相关漫画</h2>
+          <ul class="character-comics">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="static/js/md5.js"></script>
+  <script type="text/javascript" src="static/js/api.js"></script>
+  <script type="text/javascript" src="static/js/featured-character.js"></script>
+  <script type="text/javascript" src="static/js/carousel.js"></script>
+  <script type="text/javascript" src="static/js/search.js"></script>
+  <script type="text/javascript" src="static/js/index.js"></script>
+</body>
+</html>

@@ -28,7 +28,9 @@ def superpowerAbilities():
 def X_MEN():
     return render_template("X_Men.html")
 
-
+@app.route('/characters')
+def characters():
+    return render_template("character.html")
 
 if __name__ == '__main__':
     app.run()
